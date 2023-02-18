@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/Name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Name"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Họ và tên: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/et_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Phone"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:gravity="left"
+                android:text="Số điện thoại: "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="12"
+                android:inputType="phone"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sex_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Sex"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Giới tính: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"/>
+
+                <Switch
+                    android:id="@+id/s_Sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:showText="false"
+                    android:switchMinWidth="75dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/white"
+                    android:textOff="Nam"
+                    android:textOn="Nữ"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Level_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Level"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left"
+                android:text="Trình độ: "
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"/>
+
+            <Spinner
+                android:id="@+id/sp_Level"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:spinnerMode="dropdown"
+                android:dropDownWidth="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Age_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Age"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Tuổi: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sl_Age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:value="22"
+                android:valueFrom="1"
+                android:valueTo="90"
+                app:tickColor="#757575"
+                app:trackColor="#EBEBEB"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sport_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Sport"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Thể thao: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <CheckBox
+                android:id="@+id/cb_Sport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:focusable="auto"
+                android:text="Có chơi thể thao"
+                android:textSize="20dp"
+                android:textColor="#424242"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Music_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Music"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Thể loại nhạc: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <RadioGroup
+                android:id="@+id/rd_gr_Music"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <RadioButton
+                    android:id="@+id/rd_Pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pop"
+                    android:textSize="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#424242"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rd_Rap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rap"
+                    android:textSize="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#424242"/>
+
+                <RadioButton
+                    android:id="@+id/rd_Rock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rock"
+                    android:textSize="20dp"
+                    android:textColor="#424242"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_Reg"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="23dp"
+                android:layout_marginRight="35dp"/>
+
+            <Button
+                android:id="@+id/btn_Cancel"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textSize="23dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

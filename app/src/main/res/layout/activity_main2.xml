@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/Name_layout_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Name"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Họ và tên: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_Name_rs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Phone_layout_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Phone"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Số điện thoại: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_Phone_rs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sex_layout_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Sex"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Giới tính: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_Sex_rs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Level_layout_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Level"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Trình độ: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_Level_rs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Age_layout_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Age"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Tuổi: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_Age_rs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sport_layout_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Sport"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Thể thao: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_Sport_rs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Music_layout_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_Music"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Thể loại nhạc: "
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_Music_rs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
